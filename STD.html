@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STD</title>
+</head>
+<body>
+
+<h1>1.	Scope.</h1>
+<p>This section shall be divided into the following paragraphs.</p>
+
+<h2>1.1		Identification. </h2>
+<p>This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).</p>
+
+<h2>1.2		System overview. </h2>
+<p>This paragraph shall briefly state the purpose of the system and the software to which this document applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.</p>
+
+<h2>1.3		Document overview. </h2>
+<p>This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.</p>
+
+<h1>2.	Referenced documents.</h1>
+<p>This section shall list the number, title, revision, and date of all documents referenced in this document. This section shall also identify the source for all documents not available through normal Government stocking activities. </p>
+
+<h1>3.	Test preparations. </h1>
+<p>This section shall be divided into the following paragraphs. Safety precautions, marked by WARNING or CAUTION, and security and privacy considerations shall be included as applicable.</p>
+
+<h2>3.x		(Project unique identifier of a test).</h2>
+<p>This paragraph shall identify a test by project-unique identifier, shall provide a brief description, and shall be divided into the following subparagraphs. When the information required duplicates information previously specified for another test, that information may be referenced rather than repeated.</p>
+
+<h3>3.x.1		Hardware preparation.</h3>
+<p>This paragraph shall describe the procedures necessary to prepare the hardware for the test. Reference may be made to published operating manuals for these procedures. The following shall be provided, as applicable:
+<ol type="a">
+<li>The specific hardware to be used, identified by name and, if applicable, number</li>
+<li>Any switch settings and cabling necessary to connect the hardware</li>
+<li>One or more diagrams to show hardware, interconnecting control, and data paths</li>
+<li>Step-by-step instructions for placing the hardware in a state of readiness</li>
+</ol>
+</p>
+
+<h3>3.x.2		Software preparation.</h3>
+<p>This paragraph shall describe the procedures necessary to prepare the item(s) under test and any related software, including data, for the test. Reference may be made to published software manuals for these procedures. The following information shall be provided, as applicable:
+<ol type="a">
+<li>The specific software to be used in the test</li>
+<li>The storage medium of the item(s) under test (e.g., magnetic tape, diskette)</li>
+<li>The storage medium of any related software (e.g., simulators, test drivers, databases)</li>
+<li>Instructions for loading the software, including required sequence</li>
+<li>Instructions for software initialization common to more than one test case</li>
+</ol>
+</p>
+
+<h3>3.x.3		Other pre test preparations.</h3>
+<p>This paragraph shall describe any other pre-test personnel actions, preparations, or procedures necessary to perform the test.</p>
+
+<h1>4.	Test descriptions. </h1>
+<p>This section shall be divided into the following paragraphs. Safety precautions, marked by WARNING or CAUTION, and security and privacy considerations shall be included as applicable.</p>
+
+<h2>4.x		(Project unique identifier of a test).</h2>
+<p>This paragraph shall identify a test by project unique identifier and shall be divided into the following subparagraphs. When the required information duplicates information previously provided, that information may be referenced rather than repeated.</p>
+
+<h3>4.x.y		(Project-unique identifier of a test case).</h3>
+<p>This paragraph shall identify a test case by project unique identifier, state its purpose, and provide a brief description. The following subparagraphs shall provide a detailed description of the test case.</p>
+
+<h4>4.x.y.1	Requirements addressed. </h4>
+<p>This paragraph shall identify the CSCI or system requirements addressed by the test case. (Alternatively, this information may be provided in 5.a.)</p>
+
+<h4>4.x.y.2	Prerequisite conditions. </h4>
+<p>This paragraph shall identify any prerequisite conditions that must be established prior to performing the test case. The following considerations shall be discussed, as applicable:
+<ol type="a">
+<li>Hardware and software configuration</li>
+<li>Flags, initial breakpoints, pointers, control parameters, or initial data to be set/reset prior to test commencement</li>
+<li>Preset hardware conditions or electrical states necessary to run the test case</li>
+<li>Initial conditions to be used in making timing measurements</li>
+<li>Conditioning of the simulated environment</li>
+<li>Other special conditions peculiar to the test case</li>
+</ol>
+</p>
+
+<h4>4.x.y.3	Test inputs.</h4>
+<p>This paragraph shall describe the test inputs necessary for the test case. The following shall be provided, as applicable:
+<ol type="a">
+<li>Name, purpose, and description (e.g., range of values, accuracy) of each test input</li>
+<li>Source of the test input and the method to be used for selecting the test input</li>
+<li>Whether the test input is real or simulated</li>
+<li>Time or event sequence of test input </li>
+<li>The manner in which the input data will be controlled to:
+<ol>
+<li>Test the item(s) with a minimum/reasonable number of data types and values</li>
+<li>Exercise the item(s) with a range of valid data types and values that test for overload, saturation, and other "worst case" effects</li>
+<li>Exercise the item(s) with invalid data types and values to test for appropriate handling of irregular inputs</li>
+<li>Permit retesting, if necessary</li>
+</ol>
+</li>
+</ol>
+</p>
+
+<h4>4.x.y.4	Expected test results. </h4>
+<p>This paragraph shall identify all expected test results for the test case. Both intermediate and final test results shall be provided, as applicable.</p>
+
+<h4>4.x.y.5	Criteria for evaluating results. </h4>
+<p>This paragraph shall identify the criteria to be used for evaluating the intermediate and final results of the test case. For each test result, the following information shall be provided, as applicable: 
+<ol type="a">
+<li>The range or accuracy over which an output can vary and still be acceptable</li>
+<li>Minimum number of combinations or alternatives of input and output conditions that constitute an acceptable test result</li>
+<li>Maximum/minimum allowable test duration, in terms of time or number of events</li>
+<li>Maximum number of interrupts, halts, or other system breaks that may occur</li>
+<li>Allowable severity of processing errors </li>
+<li>Conditions under which the result is inconclusive and re testing is to be performed</li>
+<li>Conditions under which the outputs are to be interpreted as indicating irregularities in input test data, in the test database/data files, or in test procedures</li>
+<li>Allowable indications of the control, status, and results of the test and the readiness for the next test case (may be output of auxiliary test software)</li>
+<li>Additional criteria not mentioned above.</li>
+</ol>
+</p>
+
+<h4>4.x.y.6	Test procedure. </h4>
+<p>This paragraph shall define the test procedure for the test case. The test procedure shall be defined as a series of individually numbered steps listed sequentially in the order in which the steps are to be performed. For convenience in document maintenance, the test procedures may be included as an appendix and referenced in this paragraph. The appropriate level of detail in each test procedure depends on the type of software being tested. For some software, each keystroke may be a separate test procedure step; for most software, each step may include a logically related series of keystrokes or other actions. The appropriate level of detail is the level at which it is useful to specify expected results and compare them to actual results. The following shall be provided for each test procedure, as applicable:
+<ol type="a">
+<li>Test operator actions and equipment operation required for each step, including commands, as applicable, to:
+<ol>
+<li>Initiate the test case and apply test inputs</li>
+<li>Inspect test conditions</li>
+<li>Perform interim evaluations of test results</li>
+<li>Record data</li>
+<li>Halt or interrupt the test case</li>
+<li>Request data dumps or other aids, if needed</li>
+<li>Modify the database/data files</li>
+<li>Repeat the test case if unsuccessful</li>
+<li>Apply alternate modes as required by the test case</li>
+<li>Terminate the test case</li>
+</ol>
+</li><br/>
+<li>Expected result and evaluation criteria for each step</li><br/>
+<li>If the test case addresses multiple requirements, identification of which test procedure step(s) address which requirements. (Alternatively, this information may be provided in 5.)</li><br/>
+<li>Actions to follow in the event of a program stop or indicated error, such as:
+<ol>
+<li>Recording of critical data from indicators for reference purposes</li>
+<li>Halting or pausing time sensitive test support software and test apparatus</li>
+<li>Collection of system and operator records of test results</li>
+</ol>
+</li><br/>
+<li>Procedures to be used to reduce and analyze test results to accomplish the following, as applicable:
+<ol>
+<li>Detect whether an output has been produced</li>
+<li>Identify media and location of data produced by the test case</li>
+<li>Evaluate output as a basis for continuation of test sequence</li>
+<li>Evaluate test output against required output </li>
+</ol>
+</li>
+</ol>
+</p>
+
+<h4>4.x.y.7	Assumptions and constraints.</h4>
+<p>This paragraph shall identify any assumptions made and constraints or limitations imposed in the description of the test case due to system or test conditions, such as limitations on timing, interfaces, equipment, personnel, and database/data files. If waivers or exceptions to specified limits and parameters are approved, they shall be identified and this paragraph shall address their effects and impacts upon the test case.</p>
+
+<h1>5.	Requirements traceability. </h1>
+<p>This paragraph shall contain:
+<ol type="a">
+<li>Traceability from each test case in this STD to the system or CSCI requirements it addresses. If a test case addresses multiple requirements, traceability from each set of test procedure steps to the requirement(s) addressed. (Alternatively, this traceability may be provided in 4.x.y.1.)</li>
+<li>Traceability from each system or CSCI requirement covered by this STD to the test case(s) that address it. For CSCI testing, traceability from each CSCI requirement in the CSCI's Software Requirements Specification (SRS) and associated Interface Requirements Specifications (IRSs). For system testing, traceability from each system requirement in the system's System/Subsystem Specification (SSS) and associated IRSs. If a test case addresses multiple requirements, the traceability shall indicate the particular test procedure steps that address each requirement.</li>
+</ol>
+</p>
+
+<h1>6.	Notes. </h1>
+<p>This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.</p>
+
+<h1>A.	Appendixes.</h1>
+<p>Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).</p>
+
+</body>
+</html>
